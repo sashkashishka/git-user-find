@@ -16,9 +16,9 @@ let userInfo = {},
 
 
 // after window was reloaded - clear all data in localstorage    
-window.onload = () => {
+window.addEventListener("load", () => {
   localStorage.clear();
-}
+})
 
 // validation and then finding
 searchBtn.onclick = () => {
@@ -77,7 +77,6 @@ function findUser(name) {
           })
         })
       ])
-
     .then((result) => {
       // sort recieved data and assign to variables
       result.forEach(item => {
