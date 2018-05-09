@@ -1,0 +1,72 @@
+.user-card
+  display: flex
+  flex-wrap: wrap
+  max-width 1100px
+  margin 17px
+
+.user-card__avatar
+  height 100px
+
+
+.user-card__user-info-container
+  flex-grow: 1
+  padding-left: 16px
+
+
+.user-card__name
+  margin 0
+
+.user-card__link-container
+  display: flex
+  align-items: center
+  font-size 16px
+  margin-left: 18px
+  color: #d4d4d4
+
+.user-card__link
+  margin 0 10px
+
+.user-card__location
+  display inline
+  font-size 16px
+  vertical-align: top
+
+  &::before
+    content: $location
+    /* background-image: 
+    background-repeat: no-repeat
+    background-size contain */
+    display inline-block
+    width 20px
+    height 20px
+    fill: #cecece
+    padding-right: 8px
+
+.user-card__dates-container
+  display block
+  border-collapse: collapse
+  font-size: 14px
+
+.user-card__date
+  padding-left: 16px
+  font-weight bold
+
+
+.user-card__repo-and-gist-container
+  display flex
+  align-items: center
+  font-size 16px
+  text-align: center
+
+.user-card__repositorium
+  color: #ff7043
+  padding: 0 15px
+
+.user-card__gist
+  padding: 0 15px
+
+
+/* ==================== modificator ==================== */
+.user-card_font-size_big
+  font-size 35px
+  

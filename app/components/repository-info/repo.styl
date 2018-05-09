@@ -1,0 +1,116 @@
+/* mixin for pseudo elements 
+  set quadratic size of element
+*/
+widthAndHigh(n)
+  width n 
+  height n 
+
+.repo-container__title
+  font-weight bold
+  font-size 16px
+  margin-left: 17px
+
+
+.repo-card
+  display: flex
+  max-width 1100px
+  margin 0 17px
+  padding: 10px 0
+  border-top: 1px solid #efefef
+
+  &:last-child
+    border-bottom: 1px solid #efefef 
+
+
+
+.repo-card__index-container
+  display inline-block
+  color: #cfcfcf
+  margin: 0 24px 0 14px 
+
+.repo-card__repo-info-container
+  display: flex
+  flex-wrap: wrap
+  flex-grow: 1
+
+  
+
+.repo-card__brief-info
+  display flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width 100%
+  
+  
+
+.repo-card__repo-link
+  font-size 16px
+
+.repo-card__tech-info
+  display inline
+  font-size 14px
+  margin-right: 20px
+
+
+.repo-card__repo-stars
+  display inline
+  margin-left 15px 
+  &::before
+    content: $stars
+    display inline-block
+    widthAndHigh(15px)
+    padding-right: 4px
+
+
+.repo-card__repo-forks
+  display inline 
+  margin-left 15px
+  &::before
+    content: $forks
+    display inline-block
+    widthAndHigh(15px)
+    padding-right: 4px
+    
+
+.repo-card__repo-issues
+  display inline 
+  margin-left 15px
+  &::before
+    content: $issues
+    display inline-block
+    widthAndHigh(15px)
+    padding-right: 4px
+    
+
+.repo-card__repo-lang
+  display inline
+  background-color: #7d7d7d
+  color: #fff
+  border-radius: 3px
+  padding: 0 4px;
+  margin-left: 5px;
+
+
+.repo-card__description
+  display block
+  padding: 10px 0
+  font-size 12px
+  
+
+
+.repo-card__dates-container
+  display block
+  font-size 12px
+  color: #444
+  width 100%
+  border-collapse: collapse
+
+
+/* ============ modificator ================= */
+
+.repo-card__dates-container_dark-and-bold
+  color #3f3f3f
+  font-weight bold
+
+.repo-card__dates-container_wider-width
+  padding-right: 15px
