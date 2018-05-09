@@ -32,15 +32,16 @@
   vertical-align: top
 
   &::before
-    content: $location
-    /* background-image: 
-    background-repeat: no-repeat
-    background-size contain */
+    content: ""
+    mask-image $location
     display inline-block
-    width 20px
+    width 15px
     height 20px
-    fill: #cecece
+    background-color: #cecece
     padding-right: 8px
+    -webkit-mask-size: 20px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position-x: center
 
 .user-card__dates-container
   display block

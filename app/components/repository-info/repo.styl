@@ -5,6 +5,14 @@ widthAndHigh(n)
   width n 
   height n 
 
+pseudoTechIcons(val)
+    content: ""
+    mask-image val
+    background-color: #7f7f7f 
+    display inline-block
+    widthAndHigh(15px)
+    padding-right: 4px
+
 .repo-container__title
   font-weight bold
   font-size 16px
@@ -56,37 +64,26 @@ widthAndHigh(n)
   display inline
   margin-left 15px 
   &::before
-    content: $stars
-    display inline-block
-    widthAndHigh(15px)
-    padding-right: 4px
-
+    pseudoTechIcons($stars)
 
 .repo-card__repo-forks
   display inline 
   margin-left 15px
   &::before
-    content: $forks
-    display inline-block
-    widthAndHigh(15px)
-    padding-right: 4px
-    
+    pseudoTechIcons($forks)
 
 .repo-card__repo-issues
   display inline 
   margin-left 15px
   &::before
-    content: $issues
-    display inline-block
-    widthAndHigh(15px)
-    padding-right: 4px
+    pseudoTechIcons($issues)
     
 
 .repo-card__repo-lang
   display inline
   background-color: #7d7d7d
   color: #fff
-  border-radius: 3px
+  border-radius: 2px
   padding: 0 4px;
   margin-left: 5px;
 
